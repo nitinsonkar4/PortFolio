@@ -11,11 +11,7 @@ const Projects = () => {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            {
-              title: "Portfolio Website",
-              description:
-                "A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
-            },
+           
             {
               title: "E-commerce Store",
               description:
