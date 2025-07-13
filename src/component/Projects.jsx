@@ -15,39 +15,28 @@ const Projects = () => {
               title: "Portfolio Website",
               description:
                 "A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
-              link: "https://yourportfolio.com",
             },
             {
               title: "E-commerce Store",
               description:
                 "A full-stack e-commerce web app with product listings, cart, and payment integration.",
-              link: "https://ecommerce.example.com",
             },
             {
               title: "Task Manager",
               description:
                 "A React-based task management app with CRUD features and local storage support.",
-              link: "https://taskmanager.example.com",
             },
             {
               title: "Blog Platform",
               description:
                 "A simple blog platform using Node.js and Express with markdown support and user authentication.",
-              link: "https://blogplatform.example.com",
-            },
-            {
-              title: "Chat App",
-              description:
-                "Real-time chat application built with Socket.io and React for instant messaging.",
-              link: "https://chatapp.example.com",
             },
             {
               title: "Weather App",
               description:
                 "Weather forecasting app that fetches data from public APIs and displays current weather conditions.",
-              link: "https://weatherapp.example.com",
             },
-          ].map(({ title, description, link }) => (
+          ].map(({ title, description }) => (
             <div
               key={title}
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition"
@@ -58,14 +47,15 @@ const Projects = () => {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {description}
               </p>
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-600 hover:underline font-medium"
+
+              {/* “View Project” button without navigation */}
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-700 font-medium focus:outline-none"
+                onClick={() => {}}
               >
                 View Project &rarr;
-              </a>
+              </button>
             </div>
           ))}
         </div>
